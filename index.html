@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- <audio autoplay loop>
+        <source src="TERE WARGA _ SAVI KAHLON _ THE MASTERZ _ SONY MUSIC INDIA _ VE MERE HAANIYA DIL JAANIA [2DneMDFACFQ].mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio> -->
+    <audio controls autoplay style="display: none;">
+        <source src="TERE WARGA _ SAVI KAHLON _ THE MASTERZ _ SONY MUSIC INDIA _ VE MERE HAANIYA DIL JAANIA [2DneMDFACFQ].mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
     <div class="container">
         <h1>Happy 19th Birthday, My Lovely Wife!</h1>
         <div class="slider">
@@ -14,14 +22,14 @@
                 <img src="images/1.jpeg" alt="Photo 1">
                 <img src="images/2.JPG" alt="Photo 2">
                 <img src="images/3.JPG" alt="Photo 3">
-                <img src="images/4.jpeg" alt="Photo 1">
-                <img src="images/5.jpeg" alt="Photo 2">
-                <img src="images/6.jpeg" alt="Photo 3">
-                <img src="images/1 (4).jpeg" alt="Photo 3">
-                <img src="images/4 (1).jpeg" alt="Photo 1">
-                <img src="images/4 (2).jpeg" alt="Photo 2">
-                <img src="images/4 (3).jpeg" alt="Photo 3">
-                <img src="images/11.webp" alt="Photo 3">
+                <img src="images/4.jpeg" alt="Photo 4">
+                <img src="images/5.jpeg" alt="Photo 5">
+                <img src="images/6.jpeg" alt="Photo 6">
+                <img src="images/1 (4).jpeg" alt="Photo 7">
+                <img src="images/4 (1).jpeg" alt="Photo 8">
+                <img src="images/4 (2).jpeg" alt="Photo 9">
+                <img src="images/4 (3).jpeg" alt="Photo 10">
+                <img src="images/11.webp" alt="Photo 11">
             </div>
         </div>
         <div class="message">
@@ -35,5 +43,16 @@
             </p>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.querySelector('audio');
+            audio.muted = true; // Ensure the audio is muted
+            audio.play().then(() => {
+                console.log('Audio is playing!');
+            }).catch(error => {
+                console.error('Autoplay failed:', error);
+            });
+        });
+    </script>
 </body>
 </html>
