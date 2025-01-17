@@ -63,3 +63,12 @@ h1 {
     90.90% { transform: translateX(-900%); }
     100% { transform: translateX(-1000%); }
 }
+
+
+@media (max-width: 500px) {
+    .slides {
+        display: flex;
+        height: 569px;
+        animation: slide 22s infinite;
+    }
+}
